@@ -9,8 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 //database connection with MongoDB
-require('dotenv').config()
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect("mongodb+srv://nk2:nk2@cluster0.2yr7pya.mongodb.net/srma");
 
 app.get("/", (req, res)=> {
     res.send("Express app is Running");
